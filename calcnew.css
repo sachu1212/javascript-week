@@ -1,0 +1,29 @@
+.myClass{
+    background-color: blue;
+    transform: rotate(15);
+    font-size: 2rem;
+}
+
+button {
+    color: orange;
+    margin: 15px 5px 0px 7px;
+}
+
+button:focus{
+    animation: wooo 1s infinite;
+}
+
+#inputA{
+    border: green 5px solid;
+    }
+
+    input[type="number"]{
+        border-radius: 1rem;
+    }
+
+    @keyframes wooo {
+        from {transform: rotate()deg};
+    }
+    to{
+        transform: rotate()
+    }

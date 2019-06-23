@@ -1,0 +1,20 @@
+/* /* *{
+    background-color: gold;
+
+} */
+
+/* *{
+    font-family: 'Helvetica';
+}
+.memberWraper {
+    margin: 1em;
+    padding: 0.5em;
+
+    border: 1px solid lightgrey;
+    border-radius: 0.5em;
+}
+
+.memberWraper:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    
+} */ 

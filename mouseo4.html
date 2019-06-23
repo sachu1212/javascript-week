@@ -1,0 +1,34 @@
+<html>
+        <script>
+            class Fire{
+                constructor(T,L,color){
+                    var ref = document.createElement("span");
+                    ref.innerHTML = "O";
+                    ref.style.position="absolute";
+                    ref.style.top=T;
+                    ref.style.left=L;
+                    ref.style.color=color;
+                    document.body.appendChild(ref);
+                
+                    var Timer = window.setInterval(
+                        function(){
+                            ref.style.top = parseInt(ref.style.top)-10;
+                            if(parseInt(ref.style.top)<=3){
+                            window.clearInterval(Timer);
+                      }},10);
+            }
+            }
+
+                function dosomething(){
+                    var x = event.clientX;
+                    var y = event.clientY;
+                    var ref = new Fire(y,x);
+                }
+        
+        </script>
+                
+                <head>
+                
+                </head>
+                <body onclick ="dosomething()"> </body>
+</html>

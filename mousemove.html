@@ -1,0 +1,18 @@
+<html>
+
+<script>
+function doit(){
+    var ref = document.getElementById("X");
+    ref.style.top =window.event.clientY;
+    ref.style.left = window.event.clientX;
+}
+</script>
+
+<head>
+
+</head>
+<body onmousemove = "doit()"> </body>
+<span id = "X" style="position: absolute; Top:0; left:0;">
+NATIONWIDE
+</span>
+</html>

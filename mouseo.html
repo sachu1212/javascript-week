@@ -1,0 +1,28 @@
+<html>
+        <script>
+            class Draw{
+                constructor(T,L){
+                    var ref = document.createElement("span");
+                    ref.innerHTML = "I HATE YOU";
+                    ref.style.position="absolute";
+                    ref.style.top=T;
+                    ref.style.left=L;
+                    document.body.appendChild(ref);
+                }
+            }
+
+                function dosomething(){
+                    var x = event.clientX;
+                    var y = event.clientY;
+                    var ref = new Draw(y,x);
+                }
+        
+        </script>
+                
+                <head>
+                
+                </head>
+                <body onclick ="dosomething()"> </body>
+      
+
+</html>

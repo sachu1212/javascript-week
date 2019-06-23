@@ -1,0 +1,15 @@
+.registration > * {
+    display: inline-block;
+}
+.registration > input {
+    margin-bottom: 15px;
+}
+
+.registration > div {
+    min-width: 150px;
+}
+
+*{
+    background-color: gold;
+
+}

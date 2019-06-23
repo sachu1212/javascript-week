@@ -1,0 +1,40 @@
+<html>
+<script>
+class Box{
+    static color = 'black';
+    createBox(top,left,color){
+        var B = document.createElement("div");
+        B.style.position="absolute";
+        B.style.top=top;
+        B.style.left=left;
+        B.style.backgroundColor=color;
+        B.style.width='100px';
+        B.style.height='100px';
+        B.addEventListener("mouseenter", function(){
+            Box.color=color;
+        });
+        document.body.appendChild(B);
+    }
+    
+}
+    function Draw(){
+        document.getElementById("D").style.top=event.clientY;
+        document.getElementById("D").style.left=event.clientX;
+        document.getElementById("D").style.color=Box.color;
+    }
+
+    function Pageload(){
+        var B = new Box();
+        B.createBox(10,10,'Green');
+        B.createBox(10,700,'Blue');
+        B.createBox(400,700,'Red');
+        B.createBox(400,10,'Yellow');
+    }
+
+</script>
+
+<body onload="Pageload()" onmousemove="Draw()"></body>
+
+<span id="D" style="position: absolute;Top:0;left:0">SHAFEEQ</span>
+
+</html>
